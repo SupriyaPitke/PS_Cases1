@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13030.00"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="EV13a_Creating translations" ISN_2="1" LastIsn="2" id="3146209">
+          <Public val="EV13a"/>
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <ParametersAttributes/>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="O"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <DotNetObjectExists val="N"/>
+          <ToBeMigrated val="Y"/>
+          <LastModified _date="734195" _time="41890" date="27/02/2011" time="11:38:10"/>
+        </Header>
+        <ItemIsn val="9"/>
+        <Resource>
+          <Columns>
+            <Column id="3145729" name="Engine Directory">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145730" name="Resources Directory">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145731" name="Command file">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145732" name="Translation utility">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145733" name="Input File">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145734" name="Output File">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145735" name="Success?">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145736" name="File Selected">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145737" name="File Selected">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="N"/>
+          <EvaluateEndCondition val="B"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="R"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="D"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="D"/>
+            <TransactionBegin val="P"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="Y"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="Y"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="3145730" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="3145730" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145729" FlowIsn="3145731" id="3145729">
+                  <ASS val="3145736"/>
+                  <Column val="3145729"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145730" FlowIsn="3145732" id="3145730">
+                  <ASS val="3145738"/>
+                  <Column val="3145730"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>3145736</v>
+                    <v>3145737</v>
+                  </INT_RCMP_INFO>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145731" FlowIsn="3145733" id="3145731">
+                  <ASS val="3145739"/>
+                  <Column val="3145731"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145734">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145732" FlowIsn="3145735" id="3145732">
+                  <ASS val="3145737"/>
+                  <Column val="3145732"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="2"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145733" FlowIsn="3145736" id="3145733">
+                  <ASS val="3145740"/>
+                  <Column val="3145733"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="4"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145734" FlowIsn="3145737" id="3145734">
+                  <ASS val="3145741"/>
+                  <Column val="3145734"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="6"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145738">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145739">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3145731" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="3145729"/>
+            </Event>
+            <TXT val="Create Translation File"/>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="3145735" FlowIsn="3145740" id="3145735">
+                  <Column val="3145735"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145741">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="3145742" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="mlsbld utility not found" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="3145731"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="3145743" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="Text input file not found" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="3145732"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145744">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145745">
+                  <Type val="2"/>
+                  <Text val="Create and execute a command file"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="3145746">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="3145730"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Invoke FlowIsn="3145747">
+                  <OperationType val="O"/>
+                  <Command val="3145735"/>
+                  <Wait val="Y"/>
+                  <Show val="2"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145748">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="3145749" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="File is converted" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="3145733"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="3145750" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Error creating file" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="3145734"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145751">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145752">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3145732" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="3145730"/>
+            </Event>
+            <TXT val="IO"/>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="3145736" FlowIsn="3145753" id="3145736">
+                  <Column val="3145736"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145754">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145755">
+                  <FieldID val="3145736"/>
+                  <WithValue val="3145730"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145756">
+                  <FieldID val="3145736"/>
+                  <WithValue val="3145744"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="3145757">
+                  <Expression val="3145742"/>
+                  <Condition Exp="3145746"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145758">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145759">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3145733" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="3145730"/>
+            </Event>
+            <TXT val="Translation utility"/>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="3145737" FlowIsn="3145760" id="3145737">
+                  <Column val="3145737"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145761">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145762">
+                  <FieldID val="3145737"/>
+                  <WithValue val="3145730"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145763">
+                  <FieldID val="3145737"/>
+                  <WithValue val="3145745"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="3145764">
+                  <Expression val="3145743"/>
+                  <Condition Exp="3145747"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145765">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="3145766">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_isn="9" _last_test_id="158" id="1">
+            <PropertyList model="FORM_GUI0">
+              <X id="21"/>
+              <Y id="22"/>
+              <Width id="23" val="533"/>
+              <Height id="24" val="239"/>
+              <ShowGrid id="37"/>
+              <GridX id="38" val="2"/>
+              <GridY id="39" val="2"/>
+              <BorderStyle id="64" val="1"/>
+              <_Comment id="218"/>
+              <FormName Exp="3145729" id="311" valUnicode="Title"/>
+              <_TabbingOrder id="318" val="1"/>
+              <PersistentFormState id="493"/>
+            </PropertyList>
+            <Control _test_id="153" id="3145729">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Translation utility:"/>
+                <X id="21" val="9"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="78"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <HorizontalAlignment id="65" val="3"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="154" id="3145730">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145732"/>
+                </Model>
+                <X id="21" val="91"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="192"/>
+                <Height id="24" val="24"/>
+                <Data FieldID="3145732" id="43"/>
+                <ControlName id="46" val="Translation utility"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73"/>
+                <AllowCRInData id="74" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="155" id="3145731">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Input file:"/>
+                <X id="21" val="9"/>
+                <Y id="22" val="42"/>
+                <Width id="23" val="78"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <HorizontalAlignment id="65" val="3"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="156" id="3145732">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145733"/>
+                </Model>
+                <X id="21" val="91"/>
+                <Y id="22" val="42"/>
+                <Width id="23" val="192"/>
+                <Height id="24" val="24"/>
+                <Data FieldID="3145733" id="43"/>
+                <ControlName id="46" val="IO"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73"/>
+                <AllowCRInData id="74" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="157" id="3145733">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Output file:"/>
+                <X id="21" val="9"/>
+                <Y id="22" val="72"/>
+                <Width id="23" val="78"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <HorizontalAlignment id="65" val="3"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="158" id="3145734">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145734"/>
+                </Model>
+                <X id="21" val="91"/>
+                <Y id="22" val="72"/>
+                <Width id="23" val="192"/>
+                <Height id="24" val="24"/>
+                <Data FieldID="3145734" id="43"/>
+                <ControlName id="46" val="IO"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73"/>
+                <AllowCRInData id="74" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="3"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="30" id="3145735">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19"/>
+                <X id="21" val="294"/>
+                <Y id="22" val="6"/>
+                <Width id="23" val="236"/>
+                <Height id="24" val="218"/>
+                <Color id="51" val="14"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145735" _test_id="29" id="3145736">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}&#xD;&#xA;{\colortbl ;\red0\green0\blue0;\red255\green0\blue128;}&#xD;&#xA;{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\cf1\b\f0\fs20 In order to create a language translation for Magic, you need to:\par&#xD;&#xA;\par&#xD;&#xA;1. Create a text file containing strings of text and their translation.\par&#xD;&#xA;\par&#xD;&#xA;2. Use the MLS_BLD utility to create a translation file.\par&#xD;&#xA;\par&#xD;&#xA;3. Use the translation file in \cf2 Options->Settings->Languages\cf1 .\par&#xD;&#xA;\par&#xD;&#xA;This example shows how to use MLS_BLD in a command file, to create the translation file. Some example translation files are provided in the Resources directory, as .txt files. You can add to these if you wish, or create your own, then use this utility to create the .mls files.\par&#xD;&#xA;\par&#xD;&#xA;Add these to \cf2 Options->Settings->Languages\cf1  and then you can translate text at runtime.\par&#xD;&#xA;}&#xD;&#xA;"/>
+                <X id="21" val="305"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="217"/>
+                <Height id="24" val="203"/>
+                <Color id="51" val="14"/>
+                <Style id="63" val="1"/>
+                <EnableRTF id="69" val="Y"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+                <Border id="452"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="79" id="3145737">
+              <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+                <X id="21" val="84"/>
+                <Y id="22" val="110"/>
+                <Width id="23" val="102"/>
+                <Height id="24" val="17"/>
+                <ControlName id="46" val="Create Translation File"/>
+                <Format id="82" valUnicode="Create Translation File"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="3145729"/>
+                </RaiseEvent>
+                <TabOrder id="314" val="4"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="3145729">
+            <ExpSyntax val="'EV13a_Creating translation file'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145730">
+            <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145731">
+            <ExpSyntax val="NOT (FileExist({0,3145732}))"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="3145732">
+            <ExpSyntax val="NOT (FileExist({0,3145733}))"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="3145733">
+            <ExpSyntax val="FileExist({0,3145734})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="3145734">
+            <ExpSyntax val="NOT FileExist({0,3145734})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="3145735">
+            <ExpSyntax val="'cmd /c &quot;' &amp; Trim({0,3145731}) &amp; '&quot;'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145736">
+            <ExpSyntax val="Translate('%EngineDir%')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145737">
+            <ExpSyntax val="Translate('%EngineDir%'&amp; 'mls_bld.exe')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145738">
+            <ExpSyntax val="Translate('%WorkingDir%Resources\')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145739">
+            <ExpSyntax val="Translate('%WorkingDir%Resources\EV13.bat')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145740">
+            <ExpSyntax val="Trim({0,3145730}) &amp; 'EV13Spanish.txt'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145741">
+            <ExpSyntax val="Trim({0,3145730}) &amp; 'EV13Spanish.dat'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145742">
+            <ExpSyntax val="EditSet({0,3145736})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="3145743">
+            <ExpSyntax val="EditSet({0,3145737})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="3145744">
+            <ExpSyntax val="FileDlg('*.*',Trim({0,3145730}))"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145745">
+            <ExpSyntax val="FileDlg('*.*',Trim({0,3145729}))"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145746">
+            <ExpSyntax val="{0,3145736}&lt;>''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="3145747">
+            <ExpSyntax val="{0,3145737}&lt;>''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+        </Expressions>
+        <EVNT DESC="Start" FORCE_EXIT="E" id="3145729">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="MyZoom" FORCE_EXIT="E" id="3145730">
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="34"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
+        <Task MainProgram="N">
+          <Header Description="Create command file" ISN_2="3145730" id="3146209">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="N"/>
+            <FormType val="N"/>
+            <DotNetObjectExists val="N"/>
+            <ToBeMigrated val="Y"/>
+            <LastModified _date="734169" _time="48201" date="01/02/2011" time="13:23:21"/>
+          </Header>
+          <Resource>
+            <IO id="3145729">
+              <Description val="Command file"/>
+              <IOExpression val="3145729"/>
+              <OpenPrintDialog val="N"/>
+              <PaperSize val="68"/>
+              <Format val="L"/>
+              <Media val="S"/>
+              <Access val="W"/>
+              <Copies val="1"/>
+              <Orientation val="P"/>
+              <PrintPreview val="N"/>
+              <PDF val="N"/>
+              <PrintingAllowed val="Y"/>
+              <ContentCopyingAllowed val="Y"/>
+              <ChangesAllowed val="Y"/>
+              <PageLayoutAllowed val="Y"/>
+              <Vis2LogTranslation val="N"/>
+              <FlipLines val="N"/>
+            </IO>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="A"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="W"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="Y"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="Y"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="3145730" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="3145730" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="3145731" propagate="78">
+              <Level val="R"/>
+              <Type val="S"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <Expanded val="1"/>
+              <LogicLines>
+                <LogicLine>
+                  <Remark FlowIsn="3145731">
+                    <Type val="2"/>
+                    <Text val="Create command file here. This makes it easier to debug, and you"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="3145732">
+                    <Type val="2"/>
+                    <Text val="can view the .bat file that is created later."/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="3145733">
+                    <Type val="2"/>
+                    <Text val="Note that double quotes are used: if there are spaces in the file name, the command"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="3145734">
+                    <Type val="2"/>
+                    <Text val="does not work correctly."/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="3145735">
+                    <Type val="2"/>
+                    <Text val="Also, a default code page is coded here to avoid a warning message, but it is not required."/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <FormIO FlowIsn="3145736">
+                    <OperationType val="O"/>
+                    <Page val="A"/>
+                    <IODeviceInfo>
+                      <IoDeviceIndex val="3145729"/>
+                    </IODeviceInfo>
+                    <FormEntryInfo>
+                      <FormEntryIndex val="3145730"/>
+                    </FormEntryInfo>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </FormIO>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry _last_test_id="1" id="1">
+              <PropertyList model="FORM_GUI0">
+                <X id="21" val="24"/>
+                <Y id="22" val="49"/>
+                <Width id="23" val="536"/>
+                <Height id="24" val="200"/>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Create command file"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+          <TaskForms>
+            <FormEntry CLSS="1" _last_isn="3" _last_test_id="3" id="3145730">
+              <PropertyList model="FORM_TEXT">
+                <Width id="23" val="400"/>
+                <Height id="24" val="5"/>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Command file"/>
+              </PropertyList>
+              <Control _test_id="1" id="3145729">
+                <PropertyList model="CTRL_TEXT_STATIC">
+                  <Text id="19" valUnicode=":A command file is used here to make it easy to see what is going on."/>
+                  <Width id="23" val="100"/>
+                  <Height id="24" val="1"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="3" id="3145730">
+                <PropertyList model="CTRL_TEXT_EDIT">
+                  <Y id="22" val="1"/>
+                  <Width id="23" val="400"/>
+                  <Height id="24" val="1"/>
+                  <Data Exp="3145730" id="43"/>
+                  <Format id="82" valUnicode="400"/>
+                  <Attribute id="83" val="85"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="2" id="3145731">
+                <PropertyList model="CTRL_TEXT_STATIC">
+                  <Text id="19" valUnicode="pause"/>
+                  <Y id="22" val="2"/>
+                  <Width id="23" val="8"/>
+                  <Height id="24" val="1"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression id="3145729">
+              <ExpSyntax val="{1,3145731}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="3145730">
+              <ExpSyntax val="Trim({1,3145732}) &amp; &#xD;&#xA;' &quot;' &amp; Trim({1,3145733}) &amp; '&quot; ' &amp; &#xD;&#xA;' &quot;' &amp; Trim({1,3145734}) &amp; '&quot; ' &amp; &#xD;&#xA;'1252'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+          </Expressions>
+        </Task>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

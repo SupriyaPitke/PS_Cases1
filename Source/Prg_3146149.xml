@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13030.00"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="CN21_Send email via SSL server" ISN_2="1" LastIsn="1" id="3146149">
+          <Public val="CN21"/>
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <ParametersAttributes/>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="O"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="Y"/>
+          <LastModified _date="735114" _time="45046" date="03/09/2013" time="12:30:46"/>
+        </Header>
+        <ItemIsn val="9"/>
+        <Resource>
+          <Columns>
+            <Column id="3145729" name="Account">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="100"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="100"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145730" name="Account Password">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="30"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145731" name="From">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="100"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="100"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145732" name="To">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="100"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="100"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145733" name="Bcc">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="100"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="100"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145734" name="CC">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="100"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="100"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145735" name="Subject">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="100"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="100"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145736" name="Body">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3145737" name="Attachments">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="256"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="256"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="N"/>
+          <EvaluateEndCondition val="B"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="R"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="D"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="D"/>
+            <TransactionBegin val="P"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="Y"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="Y"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="Y"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="3145730" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="3145730" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145729" FlowIsn="3145731" id="3145729">
+                  <ASS val="3145742"/>
+                  <Column val="3145729"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="3"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145730" FlowIsn="3145732" id="3145730">
+                  <Column val="3145730"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="5"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145731" FlowIsn="3145733" id="3145731">
+                  <Column val="3145731"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="10"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145732" FlowIsn="3145734" id="3145732">
+                  <Column val="3145732"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="12"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145733" FlowIsn="3145735" id="3145733">
+                  <Column val="3145733"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="16"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145734" FlowIsn="3145736" id="3145734">
+                  <Column val="3145734"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="14"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145735" FlowIsn="3145737" id="3145735">
+                  <Column val="3145735"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="18"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145736" FlowIsn="3145738" id="3145736">
+                  <Column val="3145736"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="20"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3145737" FlowIsn="3145739" id="3145737">
+                  <Column val="3145737"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="22"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3145731" propagate="78">
+            <Level val="T"/>
+            <Type val="P"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="3145740">
+                  <FieldID val="3145732"/>
+                  <WithValue val="3145732"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145741">
+                  <FieldID val="3145734"/>
+                  <WithValue val="3145731"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145742">
+                  <FieldID val="3145733"/>
+                  <WithValue val="3145730"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145743">
+                  <FieldID val="3145729"/>
+                  <WithValue val="3145733"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145744">
+                  <FieldID val="3145730"/>
+                  <WithValue val="3145734"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145745">
+                  <FieldID val="3145731"/>
+                  <WithValue val="3145735"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145746">
+                  <FieldID val="3145735"/>
+                  <WithValue val="3145736"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145747">
+                  <FieldID val="3145736"/>
+                  <WithValue val="3145737"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="3145748">
+                  <FieldID val="3145737"/>
+                  <WithValue val="3145738"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3145732" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="3145729"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Invoke FlowIsn="3145749">
+                  <OperationType val="."/>
+                  <TaskID comp="-1"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Skip val="N"/>
+                      <DotNetType val="void"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145732"/>
+                      <Skip val="N"/>
+                      <Name val="p_to"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145734"/>
+                      <Skip val="N"/>
+                      <Name val="p_cc"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145733"/>
+                      <Skip val="N"/>
+                      <Name val="p_bcc"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145729"/>
+                      <Skip val="N"/>
+                      <Name val="p_from"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145730"/>
+                      <Skip val="N"/>
+                      <Name val="p_password"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145731"/>
+                      <Skip val="N"/>
+                      <Name val="p_fromname"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145735"/>
+                      <Skip val="N"/>
+                      <Name val="p_subject"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145736"/>
+                      <Skip val="N"/>
+                      <Name val="p_body"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3145737"/>
+                      <Skip val="N"/>
+                      <Name val="p_attachments"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <FunctionName val="func"/>
+                  <SnippetCode val="using System;&#xA;using System.Net.Mail;&#xA;&#xA;public static class Snippet&#xA;{&#xA;&#x9;public static void func(System.String p_to, System.String p_cc, System.String p_bcc, System.String p_from, System.String p_password, System.String p_fromname, System.String p_subject, System.String p_body, System.String p_attachments)&#xA;&#x9;{&#xA;&#x9;&#x9;&#x9;SmtpClient SmtpServer = new SmtpClient(); //Defines new SMTP server (i.e - Gmail)&#xA;&#x9;&#x9;&#x9;SmtpServer.Credentials = new System.Net.NetworkCredential(p_from, p_password); //Your connection details - User Name &amp; Password&#xA;            SmtpServer.Port = 587; // Gmail out port&#xA;            SmtpServer.Host = &quot;smtp.gmail.com&quot;; // Gmail host address&#xA;            SmtpServer.EnableSsl = true; //Sets the server to be SSL&#xA;            MailMessage mail = new MailMessage(); // Creates new Mail message&#xA;&#x9;&#x9;&#x9;mail.From = new MailAddress(p_from); //Sets From address without display name&#xA;&#x9;&#x9;&#x9;//mail.From  = new MailAddress(p_from,p_fromname); // Sets from address with Address and display name&#xA;            mail.Subject = p_subject; //Sets the subject&#xA;&#x9;&#x9;&#x9;mail.Body = p_body; //Sets the body (can be HTML text)&#xA;&#x9;&#x9;&#x9;mail.IsBodyHtml = true; // You need to set IsBodyHtml property to true if you want that the body will be HTML text&#xA;&#x9;&#x9;&#x9;if (p_to != &quot;&quot;) mail.To.Add(p_to); //Sets To parameter. Can't be empty.&#xA;&#x9;&#x9;&#x9;if (p_cc != &quot;&quot;) mail.CC.Add(p_cc); //Sets CC parameter. Can't be empty.&#xA;            if (p_bcc != &quot;&quot;) mail.Bcc.Add(p_bcc); //Sets BCC parameter. Can't be empty.&#xA;&#x9;&#x9;&#x9;if (p_attachments != &quot;&quot;) { //Checks that the attachments are not empty&#xA;&#x9;&#x9;&#x9;&#x9;Attachment attachment = new Attachment(p_attachments); //Creates new Attachment&#xA;            &#x9;mail.Attachments.Add(attachment); // Adds the attachment to the Mail message&#xA;&#x9;&#x9;&#x9;}&#xA;            SmtpServer.Send(mail); //Sends the Email&#xA;&#x9;}&#xA;&#xA;}"/>
+                  <CompiledCode val="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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="/>
+                  <SnippetLanguage val="C"/>
+                  <ForCompactFramework val="N"/>
+                  <isGuiThreadExecution val="N"/>
+                  <CompileTime HighDateTime="30320776" LowDateTime="937108405"/>
+                  <AssemblyIds val="-279589575,"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="3145740" FlowIsn="3145750" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="3145741"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3145733" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="34"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="Attachments"/>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <RaiseEvent FlowIsn="3145751">
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="3145731"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3145734" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="3145731"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="3145752">
+                  <FieldID val="3145737"/>
+                  <WithValue val="3145739"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_isn="24" _last_test_id="45" id="1">
+            <PropertyList model="FORM_GUI0">
+              <X id="21"/>
+              <Y id="22"/>
+              <Width id="23" val="464"/>
+              <Height id="24" val="248"/>
+              <ShowGrid id="37"/>
+              <GridX id="38" val="3"/>
+              <GridY id="39" val="7"/>
+              <Font id="50" val="14"/>
+              <Color id="51" val="4"/>
+              <BorderStyle id="64" val="1"/>
+              <_Comment id="218"/>
+              <FormName Exp="3145729" id="311" valUnicode="CN21_Send email via SSL server"/>
+              <_TabbingOrder id="318" val="1"/>
+              <PersistentFormState id="493"/>
+            </PropertyList>
+            <Control _test_id="43" id="3145729">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Mail Account Details"/>
+                <X id="21" val="6"/>
+                <Y id="22" val="7"/>
+                <Width id="23" val="315"/>
+                <Height id="24" val="50"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145729" _test_id="18" id="3145730">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Mail account"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="28"/>
+                <Width id="23" val="70"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145729" _test_id="15" id="3145731">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145729"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="28"/>
+                <Width id="23" val="227"/>
+                <Height id="24" val="9"/>
+                <Data FieldID="3145729" id="43"/>
+                <ControlName id="46" val="From"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145729" _test_id="19" id="3145732">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Account password:"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="43"/>
+                <Width id="23" val="67"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145729" _test_id="16" id="3145733">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145730"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="43"/>
+                <Width id="23" val="120"/>
+                <Height id="24" val="9"/>
+                <Data FieldID="3145730" id="43"/>
+                <ControlName id="46" val="Password"/>
+                <MultiLineEdit id="71"/>
+                <PasswordEdit id="85" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="41" id="3145734">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19"/>
+                <X id="21" val="327"/>
+                <Y id="22" val="7"/>
+                <Width id="23" val="133"/>
+                <Height id="24" val="210"/>
+                <Color id="51" val="14"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145734" _test_id="42" id="3145735">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}&#xD;&#xA;{\colortbl ;\red0\green0\blue0;}&#xD;&#xA;{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\ltrpar\cf1\b\f0\fs20 This sample uses .NET code to send emails.\par&#xD;&#xA;\par&#xD;&#xA;This is an alternative to the built-in magic mail functionality which cannot be used with an SSL or TLS mail server.\par&#xD;&#xA;\par&#xD;&#xA;Just fill in the fields and press the Send Mail button.\par&#xD;&#xA;\par&#xD;&#xA;Note that this sample will not show a success indication. In case of an error, you will see the exception.\par&#xD;&#xA;}&#xD;&#xA;"/>
+                <X id="21" val="330"/>
+                <Y id="22" val="14"/>
+                <Width id="23" val="124"/>
+                <Height id="24" val="154"/>
+                <Color id="51" val="14"/>
+                <Style id="63" val="1"/>
+                <EnableRTF id="69" val="Y"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+                <Border id="452"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="44" id="3145736">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Mail Account Details"/>
+                <X id="21" val="6"/>
+                <Y id="22" val="70"/>
+                <Width id="23" val="315"/>
+                <Height id="24" val="148"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="40" id="3145737">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="From"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="84"/>
+                <Width id="23" val="23"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="39" id="3145738">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145731"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="84"/>
+                <Width id="23" val="227"/>
+                <Height id="24" val="9"/>
+                <Data FieldID="3145731" id="43"/>
+                <ControlName id="46" val="FromName_0001"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="3"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="17" id="3145739">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="To"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="98"/>
+                <Width id="23" val="19"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="14" id="3145740">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145732"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="98"/>
+                <Width id="23" val="227"/>
+                <Height id="24" val="9"/>
+                <Data FieldID="3145732" id="43"/>
+                <ControlName id="46" val="To"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="4"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="34" id="3145741">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="CC"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="112"/>
+                <Width id="23" val="18"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="33" id="3145742">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145734"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="112"/>
+                <Width id="23" val="227"/>
+                <Height id="24" val="9"/>
+                <Data FieldID="3145734" id="43"/>
+                <ControlName id="46" val="CC"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="5"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="36" id="3145743">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Bcc"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="126"/>
+                <Width id="23" val="21"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="35" id="3145744">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145733"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="126"/>
+                <Width id="23" val="227"/>
+                <Height id="24" val="9"/>
+                <Data FieldID="3145733" id="43"/>
+                <ControlName id="46" val="Bcc"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="6"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="23" id="3145745">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Subject"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="140"/>
+                <Width id="23" val="30"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="22" id="3145746">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145735"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="140"/>
+                <Width id="23" val="227"/>
+                <Height id="24" val="9"/>
+                <Data FieldID="3145735" id="43"/>
+                <ControlName id="46" val="Subject"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="7"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="25" id="3145747">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Body"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="154"/>
+                <Width id="23" val="24"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="24" id="3145748">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145736"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="154"/>
+                <Width id="23" val="227"/>
+                <Height id="24" val="28"/>
+                <Data FieldID="3145736" id="43"/>
+                <ControlName id="46" val="Body"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73" val="Y"/>
+                <AllowCRInData id="74" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="8"/>
+                <MultilineWordwrapScroll id="455" val="3"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="38" id="3145749">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Attachment"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="189"/>
+                <Width id="23" val="43"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="3145736" _test_id="37" id="3145750">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3145737"/>
+                </Model>
+                <X id="21" val="87"/>
+                <Y id="22" val="189"/>
+                <Width id="23" val="227"/>
+                <Height id="24" val="21"/>
+                <Data FieldID="3145737" id="43"/>
+                <ControlName id="46" val="Attachments"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73" val="Y"/>
+                <AllowCRInData id="74" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="10"/>
+                <MultilineWordwrapScroll id="455" val="3"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="45" id="3145751">
+              <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+                <X id="21" val="75"/>
+                <Y id="22" val="189"/>
+                <Width id="23" val="11"/>
+                <Height id="24" val="12"/>
+                <Format id="82" valUnicode="..."/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="3145731"/>
+                </RaiseEvent>
+                <TabOrder id="314" val="9"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="20" id="3145752">
+              <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+                <X id="21" val="5"/>
+                <Y id="22" val="224"/>
+                <Width id="23" val="62"/>
+                <Height id="24" val="12"/>
+                <Format id="82" valUnicode="Send Mail"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="3145729"/>
+                </RaiseEvent>
+                <TabOrder id="314" val="11"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="3145729">
+            <ExpSyntax val="'CN21_Send email using a TLS or SSL mail server'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145730">
+            <ExpSyntax val="Trim({0,3145733})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145731">
+            <ExpSyntax val="Trim({0,3145734})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145732">
+            <ExpSyntax val="Trim({0,3145732})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145733">
+            <ExpSyntax val="Trim({0,3145729})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145734">
+            <ExpSyntax val="Trim({0,3145730})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145735">
+            <ExpSyntax val="Trim({0,3145731})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145736">
+            <ExpSyntax val="Trim({0,3145735})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145737">
+            <ExpSyntax val="Trim({0,3145736})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145738">
+            <ExpSyntax val="Trim({0,3145737})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145739">
+            <ExpSyntax val="FileDlg('','*.*')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3145740">
+            <ExpSyntax val="DNException().Message"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="3145741">
+            <ExpSyntax val="DNExceptionOccurred()"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="3145742">
+            <ExpSyntax val="'mymail@gmail.com'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+        </Expressions>
+        <EVNT DESC="send" FORCE_EXIT="N" id="3145729">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="quit" FORCE_EXIT="N" id="3145730">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="attach" FORCE_EXIT="N" id="3145731">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>
