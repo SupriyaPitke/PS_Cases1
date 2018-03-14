@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736767" _time="56029" date="14/03/2018" time="15:33:49"/>
+          <LastModified _date="736767" _time="56092" date="14/03/2018" time="15:34:52"/>
         </Header>
         <ItemIsn val="9"/>
         <Resource>
@@ -357,29 +357,6 @@
                   <Type val="2"/>
                   <Text val=" "/>
                 </Remark>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="3145733" propagate="78">
-            <Level val="R"/>
-            <Type val="P"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <Expanded val="1"/>
-            <LogicLines>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="3145749" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="in branch1" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -788,7 +765,7 @@
             </FormEntry>
           </TaskForms>
           <Task MainProgram="N">
-            <Header Description="== Write Tree" ISN_2="3145731" LastIsn="7" id="3145731">
+            <Header Description="== Write Tree" ISN_2="3145731" LastIsn="3" id="3145731">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -6938,7 +6915,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="== Create Pgm" ISN_2="3145733" LastIsn="7" id="3145731">
+              <Header Description="== Create Pgm" ISN_2="3145733" LastIsn="5" id="3145731">
                 <ExecutionRight comp="-1"/>
                 <Resident val="Y"/>
                 <SQL val="N"/>
@@ -7215,7 +7192,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="== Create Root" ISN_2="3145734" LastIsn="7" id="3145731">
+              <Header Description="== Create Root" ISN_2="3145734" LastIsn="6" id="3145731">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -7691,114 +7668,6 @@
               </Expressions>
             </Task>
           </Task>
-        </Task>
-        <Task MainProgram="N">
-          <Header Description="Branch1" ISN_2="3145736" id="3145731">
-            <ExecutionRight comp="-1"/>
-            <Resident val="N"/>
-            <SQL val="N"/>
-            <ReturnValue>
-              <ReturnValueAttr/>
-              <ParametersAttributes/>
-            </ReturnValue>
-            <SqlWhereExist val="N"/>
-            <TaskType val="O"/>
-            <External val="N"/>
-            <FormType val="N"/>
-            <DotNetObjectExists val="N"/>
-            <LastModified _date="736767" _time="56029" date="14/03/2018" time="15:33:49"/>
-          </Header>
-          <Resource>
-            <Columns/>
-          </Resource>
-          <Information>
-            <Key>
-              <Mode val="N"/>
-            </Key>
-            <DB comp="-1"/>
-            <Sort>
-              <CLS val="A"/>
-            </Sort>
-            <ForceRecordDelete DEL="N"/>
-            <EndTaskCondition val="N"/>
-            <EvaluateEndCondition val="B"/>
-            <InitialMode val="M"/>
-            <Locate Direction="A"/>
-            <Range Direction="A"/>
-            <VarRange/>
-            <TaskProperties>
-              <SelectionTable val="N"/>
-              <ConfirmUpdate CNFU="N"/>
-              <ConfirmCancel val="N"/>
-              <ErrorStrategy val="R"/>
-              <LockingStrategy val="M"/>
-              <CacheStrategy val="N"/>
-              <ForceRecordSuffix val="N"/>
-              <TransactionMode val="W"/>
-              <TransactionBegin val="P"/>
-              <PreloadView val="N"/>
-              <AllowEmptyDataview val="Y"/>
-              <KeepCreatedContext val="N"/>
-            </TaskProperties>
-            <SIDE_WIN>
-              <AllowOptions val="Y"/>
-              <AllowQuery val="Y"/>
-              <AllowModify val="Y"/>
-              <AllowCreate val="Y"/>
-              <AllowDelete val="Y"/>
-              <AllowLocate val="Y"/>
-              <AllowRange val="Y"/>
-              <AllowIndexChange val="Y"/>
-              <AllowSorting val="Y"/>
-              <AllowIOFiles val="Y"/>
-              <RecordCycle val="Y"/>
-              <AllowEvents val="Y"/>
-              <AllowIndexOptimization val="Y"/>
-              <AllowLocationInQuery val="Y"/>
-              <AllowPrintingData val="N"/>
-            </SIDE_WIN>
-            <WIN>
-              <OpenTaskWindow val="Y"/>
-              <CloseTaskWindow val="Y"/>
-              <ForegroundWindow val="Y"/>
-              <FlipFld val="N"/>
-              <RefreshTaskWindow ReturnValue="N"/>
-            </WIN>
-            <BOX>
-              <Direction val="V"/>
-            </BOX>
-          </Information>
-          <TaskLogic>
-            <LogicUnit id="3145729" propagate="78">
-              <Level val="R"/>
-              <Type val="M"/>
-              <Scope val="S"/>
-              <EngineDirective val="S"/>
-              <ShowMessage val="Y"/>
-              <Condition val="89"/>
-              <Event>
-                <EventType val="S"/>
-                <PublicObject comp="-1"/>
-              </Event>
-              <LogicLines>
-                <LogicLine>
-                  <DATAVIEW_SRC FlowIsn="3145729" Type="M">
-                    <Condition val="N"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </DATAVIEW_SRC>
-                </LogicLine>
-              </LogicLines>
-            </LogicUnit>
-          </TaskLogic>
-          <TaskForms>
-            <FormEntry id="1">
-              <PropertyList model="FORM_GUI0">
-                <_Comment id="218"/>
-                <FormName id="311" valUnicode="Branch1"/>
-              </PropertyList>
-            </FormEntry>
-          </TaskForms>
         </Task>
       </Task>
     </Programs>
